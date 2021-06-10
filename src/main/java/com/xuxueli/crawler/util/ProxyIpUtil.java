@@ -8,6 +8,7 @@ import java.io.*;
 import java.net.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -121,6 +122,9 @@ public class ProxyIpUtil {
         while ((line = in.readLine()) != null) {
             buffer.append(line);
             ipp.add(line);
+        }
+        if(ipp.size() == 0){
+            return Collections.emptyList();
         }
         List<String> ipList = new ArrayList<>();
         for (String s : ipp) {
