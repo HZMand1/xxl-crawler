@@ -36,4 +36,10 @@ public class RegexUtil {
 		return matches(URL_REGEX, str);
 	}
 
+	public static void main(String[] args) {
+		String regex = "https://www.amazon.com/-/zh/international-sales-offers/b/?.*";
+		String str = "https://www.amazon.com/-/zh/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058";
+		System.out.println(RegexUtil.matches(regex,str));
+	}
+
 }

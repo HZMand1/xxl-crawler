@@ -23,7 +23,7 @@ public class XxlCrawlerTest07 {
     @PageSelect(cssQuery = "body")
     public static class PageVo {
 
-        @PageFieldSelect(cssQuery = "#jd-price", selectType = XxlCrawlerConf.SelectType.TEXT)
+        @PageFieldSelect(cssQuery = "#J-p-12228194", selectType = XxlCrawlerConf.SelectType.TEXT)
         private String data;
 
         public String getData() {
